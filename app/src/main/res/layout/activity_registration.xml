@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <Button
+        android:id="@+id/signup_btn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="199dp"
+        android:text="@string/signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confpass_txt" />
+
+    <EditText
+        android:id="@+id/email_txt"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/email_txt"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/pass_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.776" />
+
+    <EditText
+
+        android:id="@+id/pass_txt"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="@string/password_txt"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/confpass_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/confpass_txt"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="199dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/confirmpassword"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/signup_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

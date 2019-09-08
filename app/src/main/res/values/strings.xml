@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MemoApp</string>
+    <string name="splashtext">welcome to splash screen</string>
+    <string name="login_btn">LOGIN</string>
+    <string name="confirmpassword">Confirm password</string>
+    <string name="password_txt">password</string>
+    <string name="email_txt">Email</string>
+    <string name="signup">SIGNUP</string>
+    <string name="register_btn">REGISTER</string>
+    <string name="title">Title</string>
+</resources>
