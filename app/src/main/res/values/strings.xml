@@ -8,4 +8,8 @@
     <string name="signup">SIGNUP</string>
     <string name="register_btn">REGISTER</string>
     <string name="title">Title</string>
+    <string name="note_title">note title</string>
+    <string name="updated_time">updated time</string>
+    <string name="add_notes">Add Notes</string>
+    <string name="description">description</string>
 </resources>
