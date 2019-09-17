@@ -8,12 +8,14 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.List;
+
 public class MemoAdapter extends RecyclerView.Adapter<MemoAdapter.MemoViewHolder>{
 
-    private String[] memo;
-    public MemoAdapter(String[] memo)
-    {
-       this.memo = memo;
+    private List<MemoData> memoData;
+
+    public MemoAdapter(List<MemoData> memoData) {
+        this.memoData = memoData;
     }
 
     @NonNull
@@ -27,14 +29,14 @@ public class MemoAdapter extends RecyclerView.Adapter<MemoAdapter.MemoViewHolder
     @Override
     public void onBindViewHolder(@NonNull MemoViewHolder holder, int position) {
 
-        String title = memo[position];
-        holder.memo_title.setText(title);
+        holder.memo_title.setText(memoData.get(position).getTitle());
+        holder.memo_desc.setText(memoData.get(position).getDesc());
 
     }
 
     @Override
     public int getItemCount() {
-        return memo.length;
+        return memoData.size();
     }
 
     public class MemoViewHolder extends RecyclerView.ViewHolder{
