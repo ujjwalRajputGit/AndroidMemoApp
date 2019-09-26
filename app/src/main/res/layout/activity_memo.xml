@@ -5,14 +5,15 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MemoActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
 
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/memolist"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="5dp">
+        android:background="@drawable/bg2">
 
     </androidx.recyclerview.widget.RecyclerView>
 
@@ -22,11 +23,8 @@
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/memolist"
         android:layout_alignBottom="@+id/memolist"
-        android:layout_margin="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
         android:src="@drawable/ic_add_white_24dp"
         app:backgroundTint="@color/thm"
         app:elevation="10dp"
